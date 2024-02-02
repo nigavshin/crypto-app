@@ -1,7 +1,14 @@
 import "./App.css";
+import AppLayout from "./components/layout/AppLayout";
+import { CryptoContextProvider } from "./context/crypto-context";
+
 
 function App() {
-  return <div>Hello</div>;
+  return (
+    <CryptoContextProvider>
+      <AppLayout/>
+    </CryptoContextProvider>
+  );
 }
 
 export default App;
